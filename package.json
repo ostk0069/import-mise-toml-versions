@@ -1,11 +1,11 @@
 {
     "name": "import-mamba-tool-versions",
-    "version": "1.0.1",
-    "description": "Import mise.toml tool versions to GitHub Actions workflows.",
+    "version": "1.0.2",
+    "description": "Import .mise.toml tool versions to GitHub Actions workflows.",
     "keywords": [
       "import",
       "mise",
-      "mise.toml",
+      ".mise.toml",
       "asdf"
     ],
     "homepage": "https://github.com/ostk0069/import-mise-toml-versions#readme",

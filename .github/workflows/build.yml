@@ -13,7 +13,7 @@ jobs:
       - uses: ostk0069/import-mise-toml-versions@main
         id: mise
         with:
-          path: mise.toml
+          path: .mise.toml
       - name: Echo mise
         run: |
           echo "Node.js is ${{ steps.mise.outputs.nodejs }}"
