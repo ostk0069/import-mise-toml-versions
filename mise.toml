@@ -1,0 +1,11 @@
+[tools]
+node = "22.14.0"
+flutter = "3.24.5-stable"
+dart = "3.5.4"
+java = "temurin-17.0.15+6"
+gcloud = "517.0.0"
+fastlane = "2.227.2"
+cocoapods = "1.16.2"
+
+[alias]
+fastlane = "git@github.com:mollyIV/asdf-fastlane.git"
