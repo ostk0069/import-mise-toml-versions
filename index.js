@@ -36,13 +36,15 @@ const main = async () => {
     if (match) {
       const [, tool, version] = match;
 
-      // A specifical case for flutter
+      // ツール固有のバージョン処理
       let finalVersion = version;
       if (tool === 'flutter') {
         finalVersion = version
           .replace(/-stable$/, '')
           .replace(/\.pre-beta$/, '')
           .replace(/\.pre-dev$/, '');
+      } else if (tool === 'java') {
+        finalVersion = version.split('-')[1] || version;
       }
 
       core.setOutput(tool, finalVersion);
