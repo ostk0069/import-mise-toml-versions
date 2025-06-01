@@ -1,5 +1,5 @@
 # import-mise-toml-versions
-🔨 Import mise.toml tool versions to GitHub Actions workflows.  
+🔨 Import .mise.toml tool versions to GitHub Actions workflows.  
 mise version of [wasabeef/import-asdf-tool-versions-action](https://github.com/wasabeef/import-asdf-tool-versions-action)
 
 ## Usage
@@ -12,7 +12,7 @@ jobs:
       - uses: ostk0069/import-mise-toml-versions@v1
         id: mise
         # with:
-        #   path: mise.toml # Default
+        #   path: .mise.toml # Default
       - name: Echo mise
         run: |
           echo "${{ steps.mise.outputs.flutter }}"

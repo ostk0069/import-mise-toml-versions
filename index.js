@@ -26,7 +26,7 @@ const main = async () => {
   // [tools]セクションを抽出
   const toolsSection = content.match(/\[tools\]([\s\S]*?)(?=\[|$)/);
   if (!toolsSection) {
-    throw new Error('No [tools] section found in mise.toml');
+    throw new Error('No [tools] section found in .mise.toml');
   }
 
   // ツールとバージョンのペアを抽出
