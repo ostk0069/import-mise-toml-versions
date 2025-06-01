@@ -1,0 +1,26 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: ostk0069/import-mise-toml-versions@main
+        id: mise
+        with:
+          path: mise.toml
+      - name: Echo mise
+        run: |
+          echo "Node.js is ${{ steps.mise.outputs.nodejs }}"
+          echo "Flutter is ${{ steps.mise.outputs.flutter }}"
+          echo "Dart is ${{ steps.mise.outputs.dart }}"
+          echo "Java is ${{ steps.mise.outputs.java }}"
+          echo "Gcloud is ${{ steps.mise.outputs.gcloud }}"
+          echo "Fastlane is ${{ steps.mise.outputs.fastlane }}"
+          echo "Cocoapods is ${{ steps.mise.outputs.cocoapods }}"

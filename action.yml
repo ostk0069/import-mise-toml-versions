@@ -1,0 +1,11 @@
+name: 'Import mise.toml'
+description: 'Import mise.toml tool versions to GitHub Actions workflows.'
+author: "Takuma Osada / @ostk0069"
+inputs:
+  path:
+    description: 'mise.toml path'
+    required: true
+    default: 'mise.toml'
+runs:
+  using: 'node20'
+  main: 'index.js'
