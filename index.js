@@ -1,6 +1,5 @@
-const core = require('@actions/core');
-const github = require('@actions/github');
-const { promises: fs } = require('fs');
+import core from '@actions/core';
+import { promises as fs } from 'fs';
 
 /** .tool-version format
  * {Runtime} {Version}

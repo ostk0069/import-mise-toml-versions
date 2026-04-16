@@ -11,4 +11,4 @@ inputs:
     default: '.mise.toml'
 runs:
   using: 'node24'
-  main: 'index.js'
+  main: 'dist/index.js'
