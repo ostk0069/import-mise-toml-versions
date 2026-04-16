@@ -17,6 +17,7 @@
       "url": "git+https://github.com/ostk0069/import-mise-toml-versions.git"
     },
     "license": "MIT",
+    "type": "module",
     "author": "ostk0069",
     "main": "index.js",
     "scripts": {
